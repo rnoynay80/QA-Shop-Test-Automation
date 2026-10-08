@@ -1,5 +1,5 @@
 ## **1. Project Overview**
-A Playwright and TypeScript-based QA automation project using the QA Shop application as the system under test. The project covers UI, API, database, and end-to-end testing, with Docker providing the application and PostgreSQL environment. The framework will progressively introduce CI/CD and AI-assisted QA capabilities.
+A Playwright and TypeScript-based QA automation project using the QA Shop application as the system under test. The project covers UI, API, database, and end-to-end testing, with Docker providing the [...] 
 
 ## **2. Project Objective**
 - Automate critical UI workflows using Playwright + TypeScript
@@ -14,8 +14,10 @@ A Playwright and TypeScript-based QA automation project using the QA Shop applic
   - Failure analysis
   - Root-cause assistance
   - Intelligent test recommendations
+
 ## **3. Architecture**
-                      QA SHOP TEST AUTOMATION
+```text
+                    QA SHOP TEST AUTOMATION
                               │
                               ▼
                    Playwright + TypeScript
@@ -52,3 +54,4 @@ A Playwright and TypeScript-based QA automation project using the QA Shop applic
                              │
                              ▼
                     GitHub Actions CI/CD
+```
