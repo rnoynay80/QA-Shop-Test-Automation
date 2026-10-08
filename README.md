@@ -1,5 +1,5 @@
 ## **1. Project Overview**
-A Playwright and TypeScript-based QA automation project using the QA Shop application as the system under test. The project covers UI, API, database, and end-to-end testing, with Docker providing the application and PostgreSQL environment. The framework will progressively introduce CI/CD and AI-assisted QA capabilities.
+A Playwright and TypeScript-based QA automation project using the QA Shop application as the system under test. The project covers UI, API, database, and end-to-end testing, with Docker providing the environment for repeatable execution across different stages.
 
 ## **2. Project Objective**
 - Automate critical UI workflows using Playwright + TypeScript
@@ -20,38 +20,54 @@ A Playwright and TypeScript-based QA automation project using the QA Shop applic
                     QA SHOP TEST AUTOMATION
                               │
                               ▼
-                   Playwright + TypeScript
+                    Playwright + TypeScript
                               │
-        ┌─────────────────────┼─────────────────────┐
-        │                     │                     │
-        ▼                     ▼                     ▼
-     UI Tests             API Tests             DB Tests
-        │                     │                     │
-        ▼                     ▼                     ▼
-   ┌──────────┐          ┌──────────┐        ┌────────────┐
-   │ QA Shop  │─────────▶│ QA Shop  │───────▶│ PostgreSQL │
-   │  Web UI  │          │ REST API │        │  Database  │
-   └──────────┘          └──────────┘        └────────────┘
-        │                     │                     │
-        └─────────────────────┼─────────────────────┘
-                              ▼
-                     Integration Tests
-                     UI → API → Database
+         ┌─────────────────────┼─────────────────────┐
+         │                     │                     │
+         ▼                     ▼                     ▼
+      UI Tests             API Tests             DB Tests
+         │                     │                     │
+         ▼                     ▼                     ▼
+    ┌──────────┐          ┌──────────┐        ┌────────────┐
+    │ QA Shop  │─────────▶│ QA Shop  │───────▶│ PostgreSQL │
+    │  Web UI  │          │ REST API │        │  Database  │
+    └──────────┘          └──────────┘        └────────────┘
+         │                     │                     │
+         └─────────────────────┼─────────────────────┘
+                               ▼
+                      Integration Tests
+                      UI → API → Database
+                               │
+                               ▼
+                     ┌──────────────────┐
+                     │    AI QA Layer   │
+                     │                  │
+                     │ Test Generation  │
+                     │ Failure Analysis │
+                     │ Test Suggestions │
+                     │ Test Data        │
+                     │ Root Cause Help  │
+                     └────────┬─────────┘
                               │
                               ▼
-                    ┌──────────────────┐
-                    │    AI QA Layer   │
-                    │                  │
-                    │ Test Generation  │
-                    │ Failure Analysis │
-                    │ Test Suggestions │
-                    │ Test Data        │
-                    │ Root Cause Help  │
-                    └────────┬─────────┘
-                             │
-                             ▼
-                      Test Reporting
-                             │
-                             ▼
-                    GitHub Actions CI/CD
+                       Test Reporting
+                              │
+                              ▼
+                     GitHub Actions CI/CD
 ```
+
+## **4. Technology Stack**
+
+| Category | Technology |
+| --- | --- |
+| Test Automation | Playwright |
+| Programming Language | TypeScript |
+| Runtime | Node.js |
+| Application Under Test | QA Shop |
+| API Testing | Playwright APIRequestContext / REST API |
+| Database | PostgreSQL |
+| Test Environment | Docker / Docker Compose |
+| CI/CD | GitHub Actions |
+| Test Reporting | Playwright HTML Reporter |
+| Version Control | Git / GitHub |
+| AI / QE | AI-assisted test generation, test data generation, failure analysis and QA recommendations |
