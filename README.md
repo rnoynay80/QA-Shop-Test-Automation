@@ -14,7 +14,7 @@ A Playwright and TypeScript-based QA automation project using the QA Shop applic
   - Failure analysis
   - Root-cause assistance
   - Intelligent test recommendations
-  ## **3. Architecture**
+## **3. Architecture**
                       QA SHOP TEST AUTOMATION
                               │
                               ▼
