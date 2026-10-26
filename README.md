@@ -71,3 +71,24 @@ A Playwright and TypeScript-based QA automation project using the QA Shop applic
 | Test Reporting | Playwright HTML Reporter |
 | Version Control | Git / GitHub |
 | AI / QE | AI-assisted test generation, test data generation, failure analysis and QA recommendations |
+
+## 4. Test Cases
+
+### UI Automation — Product Browsing
+
+The Product Browsing suite covers eight key storefront scenarios:
+
+| Test ID | Scenario |
+|---|---|
+| PB-UI-001 | Product catalogue loads successfully |
+| PB-UI-002 | Search for an existing product |
+| PB-UI-003 | Filter products by Shirts category |
+| PB-UI-004 | View product details |
+| PB-UI-005 | Display a message when no products match the search |
+| PB-UI-006 | Update and clear product search |
+| PB-UI-007 | Sort products by price from low to high |
+| PB-UI-008 | Sort products by price from high to low |
+
+**Execution:** `npx playwright test tests/ui/product-browsing.spec.ts --project=chromium`
+
+**Reporting:** Playwright HTML Reporter
